@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parisienne&display=swap");
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -8,6 +8,18 @@ body {
 /* shared styles */
 .display-flex {
   display: flex;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  color: rgb(255, 255, 255);
+}
+main {
+  background-color: black;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 65px;
 }
 
 /* header related styles */
@@ -54,4 +66,179 @@ nav {
   border: 1px solid #a6a4a3;
   border-radius: 39px;
   width: 457px;
+}
+
+/* banner related styles */
+.banner {
+  justify-content: space-evenly;
+}
+.banner-content {
+  width: 520px;
+}
+.banner-title {
+  color: white;
+  font-size: 4.9rem;
+  margin-bottom: 5px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+#shape {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-size: 6rem;
+}
+.banner-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.button-container {
+  gap: 35px;
+}
+.join-btn {
+  font-size: 1.15rem;
+  color: white;
+  background-color: rgb(230, 83, 60);
+  border: 0;
+  width: 224px;
+  padding: 16px 40px;
+  border-radius: 42px;
+}
+.download-btn {
+  font-size: 1.15rem;
+  color: white;
+  background-color: black;
+  width: 224px;
+  padding: 16px 40px;
+  border-radius: 42px;
+  box-sizing: border-box;
+  border: 1.5px solid white;
+}
+.tutorial-btn {
+  justify-content: space-between;
+  align-items: center;
+  width: 206px;
+  height: 96px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  background: rgba(48, 48, 48, 0.54);
+  color: #333;
+  border: 1px solid rgba(48, 48, 48, 0.54);
+  padding: 20px;
+  position: relative;
+  bottom: 150px;
+  right: 100px;
+}
+
+#round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e6533c;
+}
+.tutorial-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+#tutorial-number {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 5px;
+}
+#video {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(239, 237, 232, 0.65);
+  margin-top: 2px;
+}
+.workout-btn {
+  align-items: center;
+  width: 206px;
+  height: 96px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  background: rgba(48, 48, 48, 0.54);
+  color: #333;
+  border: 1px solid rgba(48, 48, 48, 0.54);
+  padding: 40px 20px 40px 20px;
+  position: relative;
+  left: 250px;
+  bottom: 535px;
+}
+
+.workout-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.workout-title {
+  font-size: 3rem;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+.workout {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(239, 237, 232, 0.65);
+  margin-top: 2px;
+}
+
+/* habit section styles */
+.habit-section {
+  margin-bottom: 100px;
+}
+.habit-title-container {
+  max-width: 671px;
+  height: 120px;
+  margin: 0 auto;
+  margin-bottom: 58px;
+}
+#habit-title {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.habit-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 0 22px;
+}
+.habit-image-container {
+  height: 274px;
+  max-width: 1044px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.habit-img {
+  width: 231px;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.habit-img > img {
+  border-radius: 50%;
+}
+.habit-img-title {
+  font-size: 1.125rem;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.habit-img-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
 }
