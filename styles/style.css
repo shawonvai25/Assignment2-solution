@@ -6,6 +6,9 @@ body {
 }
 
 /* shared styles */
+.none {
+  display: none;
+}
 .display-flex {
   display: flex;
 }
@@ -193,12 +196,14 @@ nav {
 /* habit section styles */
 .habit-section {
   margin-bottom: 100px;
+  border: 2px solid red;
 }
 .habit-title-container {
   max-width: 671px;
-  height: 120px;
-  margin: 0 auto;
+  /* height: 120px; */
+  margin: 10px auto;
   margin-bottom: 58px;
+  flex-wrap: wrap;
 }
 #habit-title {
   text-align: center;
@@ -210,12 +215,13 @@ nav {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   padding: 0 22px;
+  border: 2px solid red;
 }
 .habit-image-container {
-  height: 274px;
   max-width: 1044px;
   margin: 0 auto;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 20px;
 }
 .habit-img {
   width: 231px;
@@ -223,6 +229,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid red;
 }
 .habit-img > img {
   border-radius: 50%;
@@ -241,4 +248,152 @@ nav {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 0px;
+}
+
+/* run section styles */
+.run-section {
+  background-color: rgb(34, 34, 34);
+  border-radius: 30px;
+  max-width: 1060px;
+  max-height: 371px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+#run-title {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.run-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+}
+.run-content {
+  width: 443px;
+  height: 290px;
+}
+.join-button {
+  height: 54px;
+  width: 224px;
+  background-color: rgb(230, 83, 60);
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 42px;
+  padding: 16px 40px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: 25px;
+}
+
+.run-img > img {
+  width: 100%;
+  /* object-fit: cover; */
+  border-radius: 14px;
+  max-width: 366px;
+  max-height: 312px;
+}
+
+/* training section starts here */
+
+.training-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+}
+.training-section {
+  margin: 0 auto;
+  border: 2px solid red;
+  max-width: 1060px;
+  margin-top: 100px;
+}
+#training-t {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.training-content {
+  margin-bottom: 58px;
+}
+.training-image-container {
+  height: 403px;
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.training-image-container div {
+  /* width: 100%;
+  height: 100%; */
+  /* object-fit: cover; */
+}
+
+.item-1 {
+  background-image: url(../images/exercise1.jpg);
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: rgba(6, 255, 210, 0.5);
+  background-blend-mode: overlay;
+}
+.item-2 {
+  background-image: url(../images/exercise2.png);
+  background-size: cover;
+  grid-column-start: 4;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.item-3 {
+  background-image: url(../images/exercise3.png);
+
+  background-size: cover;
+  grid-column-start: 10;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.item-4 {
+  background-image: url(../images/exercise4.png);
+
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.item-5 {
+  background-image: url(../images/exercise5.jpg);
+  background-size: cover;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  background-blend-mode: overlay;
+  background-color: rgba(66, 255, 0, 0.3);
+}
+.item-6 {
+  background-image: url(../images/exercise6.jpg);
+  background-size: cover;
+  object-fit: cover;
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 7;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 71, 255, 0.3);
 }

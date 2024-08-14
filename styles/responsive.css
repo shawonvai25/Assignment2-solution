@@ -1,8 +1,6 @@
 @media screen and (max-width: 576px) {
-  nav {
-    flex-direction: column;
-  }
-  .nav-links {
+  .nav-links,
+  .nav {
     flex-direction: column;
   }
   .banner {
@@ -10,6 +8,13 @@
     gap: 10px;
   }
   .button-container {
+    flex-direction: column;
+  }
+  .habit-image-container {
+    flex-direction: column;
+  }
+  /* run section */
+  .run-section {
     flex-direction: column;
   }
 }
