@@ -1,5 +1,10 @@
 @media screen and (max-width: 576px) {
-  .nav-links,
+  .nav-links {
+    display: none;
+  }
+  .header {
+    word-wrap: wrap;
+  }
   .nav {
     flex-direction: column;
   }

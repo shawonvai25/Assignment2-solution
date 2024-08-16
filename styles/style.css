@@ -289,13 +289,16 @@ nav {
   font-size: 1.125rem;
   margin-top: 25px;
 }
-
-.run-img > img {
-  width: 100%;
-  /* object-fit: cover; */
-  border-radius: 14px;
+.run-img {
   max-width: 366px;
   max-height: 312px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.run-img > img {
+  width: 100%;
+  transform: scale(2.2);
+  transform-origin: 69% 26%;
 }
 
 /* training section starts here */
@@ -346,7 +349,7 @@ nav {
 }
 .item-2 {
   background-image: url(../images/exercise2.png);
-  background-size: cover;
+  background-size: 100%;
   grid-column-start: 4;
   grid-column-end: 10;
   grid-row-start: 1;
@@ -396,4 +399,113 @@ nav {
   grid-row-end: 7;
   background-blend-mode: overlay;
   background-color: rgba(0, 71, 255, 0.3);
+}
+
+/* bmi calculator section styles */
+.bmi-calculator-section {
+  max-width: 671px;
+  height: 120px;
+  border: 2px solid red;
+  margin: 0 auto;
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+.bmi-calculator-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+}
+#bmi-title {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* chart section styles */
+.chart-section {
+  max-width: 1440px;
+  height: 487px;
+  border: 2px solid red;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.bmi-chart-container {
+  max-width: 310px;
+}
+.chart-title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.chart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.chart-table th {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.chart-table td,
+.chart-table th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 9px 12px;
+}
+.chart-table td {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+.calculate-form-container {
+  max-width: 577px;
+  height: 386px;
+}
+.calculate-form-title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+.calculate-form-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0px;
+  margin-bottom: 34px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+}
+form input {
+  padding: 12px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+}
+#element-5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.calculate-btn {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(230, 83, 60);
+  border: 0;
+  width: 224px;
+  padding: 16px 40px;
+  border-radius: 42px;
+  margin-top: 29px;
 }
