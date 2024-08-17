@@ -22,8 +22,10 @@ body {
   line-height: 120%;
   color: rgb(255, 255, 255);
 }
-main {
+body {
   background-color: black;
+}
+main {
   max-width: 1440px;
   margin: 0 auto;
   padding: 40px 65px;
@@ -77,10 +79,12 @@ nav {
 
 /* banner related styles */
 .banner {
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .banner-content {
-  width: 520px;
+  max-width: 520px;
+  word-wrap: wrap;
 }
 .banner-title {
   color: white;
@@ -95,10 +99,20 @@ nav {
   font-size: 6rem;
 }
 .banner-description {
+  word-wrap: wrap;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 5px;
   margin-bottom: 30px;
+}
+.banner-image-container {
+}
+.banner-image {
+  max-width: 350px;
+  height: 580px;
+}
+.banner-image img {
+  width: 100%;
 }
 .button-container {
   gap: 35px;
@@ -125,7 +139,7 @@ nav {
 .tutorial-btn {
   justify-content: space-between;
   align-items: center;
-  width: 206px;
+  max-width: 206px;
   height: 96px;
   border-radius: 12px;
   backdrop-filter: blur(20px);
@@ -164,7 +178,7 @@ nav {
 }
 .workout-btn {
   align-items: center;
-  width: 206px;
+  max-width: 193px;
   height: 96px;
   border-radius: 12px;
   backdrop-filter: blur(20px);
@@ -199,8 +213,8 @@ nav {
 
 /* habit section styles */
 .habit-section {
+  display: none;
   margin-bottom: 100px;
-  border: 2px solid red;
 }
 .habit-title-container {
   max-width: 671px;
@@ -219,7 +233,6 @@ nav {
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
   padding: 0 22px;
-  border: 2px solid red;
 }
 .habit-image-container {
   max-width: 1044px;
@@ -233,7 +246,6 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid red;
 }
 .habit-img > img {
   border-radius: 50%;
@@ -256,11 +268,13 @@ nav {
 
 /* run section styles */
 .run-section {
+  display: none;
   background-color: rgb(34, 34, 34);
   border-radius: 30px;
   max-width: 1060px;
-  max-height: 371px;
-  justify-content: space-around;
+  min-height: 371px;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   padding: 30px 15px;
@@ -278,8 +292,8 @@ nav {
   margin-top: 0px;
 }
 .run-content {
-  width: 443px;
-  height: 290px;
+  max-width: 443px;
+  min-height: 290px;
 }
 .join-button {
   height: 54px;
@@ -292,6 +306,7 @@ nav {
   font-weight: 600;
   font-size: 1.125rem;
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 .run-img {
   max-width: 366px;
@@ -316,6 +331,7 @@ nav {
   margin-top: 0px;
 }
 .training-section {
+  display: none;
   margin: 0 auto;
   border: 2px solid red;
   max-width: 1060px;
@@ -407,6 +423,7 @@ nav {
 
 /* bmi calculator section styles */
 .bmi-calculator-section {
+  display: none;
   max-width: 671px;
   height: 120px;
   border: 2px solid red;
@@ -429,8 +446,9 @@ nav {
 
 /* chart section styles */
 .chart-section {
+  visibility: hidden;
   max-width: 1440px;
-  height: 487px;
+  min-height: 487px;
   border: 2px solid red;
   background-color: rgb(34, 34, 34);
   display: flex;
@@ -468,7 +486,8 @@ nav {
 }
 .calculate-form-container {
   max-width: 577px;
-  height: 386px;
+  min-height: 386px;
+  word-wrap: wrap;
 }
 .calculate-form-title {
   font-size: 1.75rem;
@@ -513,6 +532,9 @@ form input {
   padding: 16px 40px;
   border-radius: 42px;
   margin-top: 29px;
+}
+.our-team-section {
+  display: none;
 }
 .team-content {
   max-width: 671px;
@@ -582,7 +604,82 @@ form input {
 }
 
 /*footer section styles */
+
 .footer {
+  max-width: 1060px;
+  min-height: 249px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+footer {
   max-width: 1440px;
-  height: 489px;
+  min-height: 489px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: 60px;
+  margin: 0 auto;
+}
+.footer-title {
+  color: #e6533c;
+  font-size: 2.25rem;
+  font-style: italic;
+}
+
+.footer-1 {
+  max-width: 443px;
+  min-height: 176px;
+  border: 2px solid red;
+}
+.footer-2 {
+  max-width: 181px;
+  min-height: 250px;
+  border: 2px solid red;
+}
+.footer-3 {
+  max-width: 181px;
+  min-height: 250px;
+  border: 2px solid red;
+}
+
+.footer-3 {
+}
+.footer-2-title,
+.footer-3-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: left;
+  line-height: 120%;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+.footer-description {
+  word-wrap: wrap;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.footer-description h6 {
+  word-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+hr {
+  color: rgba(255, 255, 255, 0.1);
+  height: 2px;
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.footer-ending p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }

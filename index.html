@@ -34,8 +34,10 @@
             <button class="download-btn">Download App</button>
           </div>
         </div>
-        <div class="banner-image">
-          <img src="./images/Images 2.png" alt="" />
+        <div class="banner-image-container">
+          <div class="banner-image">
+            <img src="./images/Images 2.png" alt="" />
+          </div>
           <button class="tutorial-btn display-flex">
             <div id="round"></div>
             <div class="tutorial-cont">
@@ -179,30 +181,30 @@
             regardless of income or access to a gym.
           </p>
           <form>
-            <input
-              type="number"
-              placeholder="Height/cm"
-              name=""
-              id="element-1"
-            />
-            <input
-              type="number"
-              placeholder="Weight/kg"
-              name=""
-              id="element-2"
-            />
-            <input type="number" placeholder="Age" name="" id="element-3" />
-            <input type="text" placeholder="Sex" name="" id="element-4" />
-            <input
-              type="text"
-              placeholder="Select an activity factor"
-              name=""
-              id="element-5"
-            />
+            <div id="element-1">
+              <input type="number" placeholder="Height/cm" name="" />
+            </div>
+            <div id="element-2">
+              <input type="number" placeholder="Weight/kg" name="" />
+            </div>
+            <div id="element-3">
+              <input type="number" placeholder="Age" name="" />
+            </div>
+            <div id="element-4">
+              <input type="text" placeholder="Sex" name="" />
+            </div>
+            <div id="element-5">
+              <input
+                type="text"
+                placeholder="Select an activity factor"
+                name=""
+              />
+            </div>
           </form>
           <button class="calculate-btn">Calculate</button>
         </div>
       </section>
+      <!-- team section -->
       <section class="our-team-section">
         <div class="team-content">
           <h3 class="section-title team-title">Meet Our Team</h3>
@@ -239,6 +241,37 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer>
+      <div class="footer">
+        <div class="footer-1">
+          <h3 class="footer-title">Fitness</h3>
+          <p class="footer-description">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym. With hundreds of
+            professional workouts.
+          </p>
+        </div>
+        <div class="footer-2">
+          <h4 class="footer-2-title">Get Started</h4>
+          <div class="footer-description">
+            <h6>Service</h6>
+            <h6>Contact US</h6>
+            <h6>Affiliate Programme</h6>
+            <h6>About Us</h6>
+          </div>
+        </div>
+        <div class="footer-3">
+          <h4 class="footer-3-title">Get Started</h4>
+          <div class="footer-description">
+            <h6>Fitness</h6>
+            <h6>Platform</h6>
+            <h6>Workout Library</h6>
+            <h6>App Design</h6>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-ending"><p>All right reserved @Fitness 2024</p></div>
+    </footer>
   </body>
 </html>

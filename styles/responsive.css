@@ -3,23 +3,82 @@
     display: none;
   }
   .header {
+    visibility: hidden;
     word-wrap: wrap;
   }
+  /* nav styles */
   .nav {
     flex-direction: column;
+  }
+  .nav-links {
+    display: none;
   }
   .banner {
     flex-direction: column;
     gap: 10px;
   }
+  .tutorial-btn {
+    max-width: 145px;
+    max-height: 74px;
+  }
+  .workout-btn {
+    max-width: 145px;
+    max-height: 74px;
+  }
   .button-container {
-    flex-direction: column;
+    gap: 15px;
+  }
+  .join-btn {
+    width: 169px;
+    padding: 16px 20px;
+    border-radius: 42px;
+  }
+  .download-btn {
+    width: 169px;
+    padding: 16px 20px;
+    border-radius: 42px;
   }
   .habit-image-container {
     flex-direction: column;
   }
+  .workout-title {
+    font-size: 1.875rem;
+  }
+  .workout-btn {
+    left: 200px;
+    bottom: 535px;
+  }
+  .tutorial-btn {
+    bottom: 150px;
+    right: 50px;
+  }
+  /* habit section styles */
+  .habit-image-container {
+    margin-left: 70px;
+  }
+  /* chart section */
+  .chart-section {
+    flex-direction: column;
+  }
+  .calculate-form-container {
+    padding-left: 0px;
+  }
+  #element-5 {
+    column-span: 2;
+  }
+
   /* run section */
   .run-section {
     flex-direction: column;
+  }
+
+  .run-content {
+    margin-left: 65px;
+    word-wrap: wrap;
+  }
+  /* team section */
+  .team-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 14px;
   }
 }
