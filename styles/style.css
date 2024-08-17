@@ -334,7 +334,6 @@ nav {
 }
 .training-section {
   margin: 0 auto;
-  border: 2px solid red;
   max-width: 1060px;
   margin-top: 100px;
 }
@@ -347,7 +346,6 @@ nav {
 }
 .training-image-container {
   height: 403px;
-  border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -426,7 +424,6 @@ nav {
 .bmi-calculator-section {
   max-width: 671px;
   height: 120px;
-  border: 2px solid red;
   margin: 0 auto;
   margin-top: 88px;
   margin-bottom: 88px;
@@ -448,7 +445,6 @@ nav {
 .chart-section {
   max-width: 1440px;
   min-height: 487px;
-  border: 2px solid red;
   background-color: rgb(34, 34, 34);
   display: flex;
   flex-wrap: wrap;
@@ -505,9 +501,10 @@ nav {
 }
 
 form {
+  max-width: 400px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 9px;
+  grid-gap: 9px;
 }
 form input {
   padding: 12px 20px;
@@ -518,10 +515,11 @@ form input {
   font-size: 1rem;
   font-weight: 400;
 }
-#element-5 {
+.element-5 {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
 .calculate-btn {
   font-size: 1.15rem;
   font-weight: 600;

@@ -106,7 +106,10 @@
   #element-5 {
     column-span: 2;
   }
-
+  .calculate-form-container {
+    max-width: 394px;
+    min-height: 386px;
+  }
   /* run section */
   .run-section {
     flex-direction: column;
