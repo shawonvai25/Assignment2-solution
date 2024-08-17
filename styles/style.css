@@ -55,6 +55,10 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+.fa-solid {
+  color: white;
+  display: none;
+}
 .nav-link {
   color: white;
   font-size: 1.2rem;
@@ -213,7 +217,6 @@ nav {
 
 /* habit section styles */
 .habit-section {
-  display: none;
   margin-bottom: 100px;
 }
 .habit-title-container {
@@ -268,7 +271,6 @@ nav {
 
 /* run section styles */
 .run-section {
-  display: none;
   background-color: rgb(34, 34, 34);
   border-radius: 30px;
   max-width: 1060px;
@@ -331,7 +333,6 @@ nav {
   margin-top: 0px;
 }
 .training-section {
-  display: none;
   margin: 0 auto;
   border: 2px solid red;
   max-width: 1060px;
@@ -369,7 +370,7 @@ nav {
 }
 .item-2 {
   background-image: url(../images/exercise2.png);
-  background-size: 100%;
+  background-size: cover;
   grid-column-start: 4;
   grid-column-end: 10;
   grid-row-start: 1;
@@ -423,7 +424,6 @@ nav {
 
 /* bmi calculator section styles */
 .bmi-calculator-section {
-  display: none;
   max-width: 671px;
   height: 120px;
   border: 2px solid red;
@@ -446,12 +446,12 @@ nav {
 
 /* chart section styles */
 .chart-section {
-  visibility: hidden;
   max-width: 1440px;
   min-height: 487px;
   border: 2px solid red;
   background-color: rgb(34, 34, 34);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: baseline;
 }
@@ -487,7 +487,6 @@ nav {
 .calculate-form-container {
   max-width: 577px;
   min-height: 386px;
-  word-wrap: wrap;
 }
 .calculate-form-title {
   font-size: 1.75rem;
@@ -502,6 +501,7 @@ nav {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 0px;
   margin-bottom: 34px;
+  word-wrap: wrap;
 }
 
 form {
@@ -534,12 +534,11 @@ form input {
   margin-top: 29px;
 }
 .our-team-section {
-  display: none;
+  min-height: 782px;
 }
 .team-content {
   max-width: 671px;
-  height: 120px;
-  border: 2px solid red;
+  min-height: 120px;
   margin: 0 auto;
   margin-top: 88px;
 }
@@ -558,7 +557,7 @@ form input {
 }
 .team-img-container {
   max-width: 1060px;
-  height: 604px;
+  min-height: 604px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0 auto;
@@ -629,17 +628,14 @@ footer {
 .footer-1 {
   max-width: 443px;
   min-height: 176px;
-  border: 2px solid red;
 }
 .footer-2 {
   max-width: 181px;
   min-height: 250px;
-  border: 2px solid red;
 }
 .footer-3 {
   max-width: 181px;
   min-height: 250px;
-  border: 2px solid red;
 }
 
 .footer-3 {

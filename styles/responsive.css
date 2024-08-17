@@ -3,10 +3,14 @@
     display: none;
   }
   .header {
-    visibility: hidden;
     word-wrap: wrap;
   }
   /* nav styles */
+  #f-solid {
+    color: white;
+    display: block;
+    font-size: 1.8rem;
+  }
   .nav {
     flex-direction: column;
   }
@@ -56,6 +60,42 @@
   .habit-image-container {
     margin-left: 70px;
   }
+
+  /* training section */
+  .item-3,
+  .item-4 {
+    display: none;
+  }
+  .training-image-container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .item-2 {
+    grid-column-start: 8;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-repeat: no-repeat;
+  }
+  .item-5 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+  .item-6 {
+    grid-column-start: 6;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+
   /* chart section */
   .chart-section {
     flex-direction: column;
@@ -80,5 +120,13 @@
   .team-img-container {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 14px;
+  }
+  /* footer section */
+  .footer {
+    flex-direction: column;
+  }
+  .footer-2,
+  .footer-3 {
+    margin-top: 15px;
   }
 }
